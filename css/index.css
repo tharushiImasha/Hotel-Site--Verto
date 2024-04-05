@@ -1,0 +1,731 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    width: 100vw;
+    background-color: #001630;
+    gap: 20px;
+    height: 100px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header>div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+header > div >img {
+    margin: 10px 0px 10px 200px;
+    width: 50px;
+}
+
+header>div>h1{
+    color: white;
+}
+
+.head {
+    margin-right: 200px;
+    margin-left: 50px;
+}
+
+.head > ul{
+    margin-bottom: 0px;
+}
+
+.head > ul > li > a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.head ul li {
+    display: inline;
+    padding: 30px;
+}
+
+ul {
+    text-align: right;
+}
+
+.navB{
+    border: 2px solid goldenrod;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.d-block{
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-weight: bold;
+}
+
+.carousel-caption > h5{
+    font-family: "Herr Von Muellerhoff", cursive;
+    font-size: 130px;
+    font-weight: 800px;
+    margin-bottom: 550px;
+    color: #001630;
+
+}
+
+.carousel-caption > p{
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.welcome>h2 {
+    font-family: "Herr Von Muellerhoff", cursive;
+    font-size: 150px;
+    color: rgba(218, 165, 32, 0.438);
+    position: relative;
+}
+
+.welcome > h5{
+    font-size: 48px;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 100px;
+    line-height: 42px;
+    letter-spacing: 2px;
+    font-family: "Roboto", sans-serif;
+}
+
+.welcome-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px 300px;
+    gap: 65px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.welcome-main > p{
+    margin-top: 100px;
+    color: gray;
+    line-height: 24px;
+}
+
+
+
+.all-boxes{
+    display: flex;
+    margin-top: 50px;
+}
+
+.all-boxes > div{
+    width: 25%;
+    height: 500px;
+}
+
+.all-boxes > div:hover{
+    transform: scale(1.05);
+}
+
+.all-boxes > div > img{
+    width: 100%;
+}
+
+.box-1{
+    background-image: url(/assets/rooms.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.box-2 {
+    background-image: url(/assets/bar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.box-3 {
+    background-image: url(/assets/meeting-room.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.box-4 {
+    background-image: url(/assets/gym.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.trans-bg{
+    background-color: rgba(0, 0, 0, 0.623);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+.box-in{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-in > img{
+    width: 80px;
+    margin-bottom: 30px;
+}
+
+.box-in > h4{
+    color: white;
+    font-size: 26px;
+    line-height: 20px;
+}
+
+.free-box{
+    background-color: #dfdfdf;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.free-box-in{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 55px;
+    margin: 50px 350px;
+}
+
+.box-in-det{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.box-in-det > img{
+    width: 60px;
+}
+
+.box-in-det > div > h5{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.box-in-det > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-in-det>div>p {
+    font-size: 15px;
+    color: gray;
+}
+
+
+
+div.scroll-container {
+    background-color: #ffff;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 15px;
+}
+
+div.scroll-container img {
+    padding: 15px;
+}
+
+/* .rooms-box > img {
+    padding: 15px;
+} */
+
+.scroll-container{
+    margin: 30px 200px;
+}
+
+/* .rooms-box{
+    border: 1px solid rgba(128, 128, 128, 0.61);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 600px;
+} */
+
+
+.food{
+    background-image: url(/assets/food.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin-top: 70px; 
+    margin-bottom: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+}
+
+.trans-food{
+    background-color: rgba(0, 0, 0, 0.582);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.food-btn{
+    color: white;
+    background-color: rgba(218, 165, 32, 0.575);
+    width: 130px;
+    height: 40px;
+    margin-top: 30px;
+}
+
+
+
+
+
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+    margin-top: 50px;
+}
+
+/* Slides */
+.mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+}
+
+.mySlides > img{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {
+    font-style: italic;
+}
+
+/* Add a blue color to the author */
+.author {
+    color: cornflowerblue;
+}
+
+
+
+
+footer {
+    margin-top: 100px;
+    height: 600px;
+    background-image: url(/assets/contact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+footer>h1 {
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 15px;
+}
+
+footer>h3 {
+    font-size: 18px;
+    color: white;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+footer>h4 {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 150px;
+}
+
+.con-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.one-detail {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.one-detail>img {
+    width: 70px;
+    height: 70px;
+}
+
+.contact-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-row>h6 {
+    color: rgb(255, 183, 0);
+    font-size: 20px;
+    margin: 0px;
+    margin-top: 5px;
+}
+
+.contact-row>p {
+    color: white;
+    font-size: 18px;
+    margin: 5px;
+    margin-left: 0px;
+}
+
+.form {
+    background-color: white;
+    width: 550px;
+    height: 350px;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 50px;
+    gap: 20px
+}
+
+.message>h3 {
+    font-size: 25px;
+    margin: 0px;
+}
+
+.text {
+    width: 430px;
+    height: 35px;
+}
+
+.btn {
+    width: 130px;
+    height: 40px;
+    background-color: #001630;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+/* Responsive */
+
+
+@media screen and (max-width: 1470px) {
+    .navB{
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .free-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 500px;
+        align-items: center;
+    }
+
+    .free-box-in{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 50px 150px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .box-in-det > img{
+        width: 40px;
+    }
+
+    .box-in-det > div > h5{
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .box-in-det > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .box-in-det>div>p {
+        font-size: 10px;
+        color: gray;
+    }
+}
+
+.head .menu {
+    display: none;
+}
+
+@media screen and (max-width: 1275px) {
+    .head .menu {
+        display: block;
+    }
+    
+    .head {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .contact {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px 50px;
+    }
+
+    .form {
+        background-color: white;
+        width: 350px;
+        height: 350px;
+    }
+
+    .message {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 50px;
+        gap: 20px
+    }
+
+    .message>h3 {
+        font-size: 20px;
+        margin: 0px;
+    }
+
+    .text {
+        width: 230px;
+        height: 35px;
+    }
+
+    .btn {
+        width: 130px;
+        height: 40px;
+        background-color: #030637;
+        color: white;
+        font-size: 20px;
+    }
+
+    .container>ul>li {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px 50px;
+    }
+
+    .form {
+        background-color: white;
+        width: 350px;
+        height: 205px;
+    }
+
+    .message {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 50px;
+        gap: 10px
+    }
+
+    .message>h3 {
+        font-size: 20px;
+        margin: 0px;
+    }
+
+    .text {
+        width: 230px;
+        height: 15px;
+    }
+
+    .btn {
+        width: 130px;
+        height: 25px;
+        background-color: #030637;
+        color: white;
+        font-size: 15px;
+    }
+
+    .recent-blogs>p {
+        font-size: 13px !important;
+    }
+
+    .popular-blogs>p {
+        font-size: 13px !important;
+    }
+
+    .technologies>p {
+        font-size: 13px !important;
+    }
+
+    .blogs>p {
+        font-size: 13px !important;
+    }
+
+    footer>h1 {
+        font-size: 25px;
+    }
+
+    footer>h3 {
+        font-size: 13px;
+    }
+
+    footer>h3 {
+        font-size: 15px;
+    }
+
+    .one-detail>img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .con-detail {
+        gap: 20px;
+    }
+
+    .one-detail {
+        gap: 10px;
+    }
+
+    .contact-row>h6 {
+        font-size: 15px;
+    }
+
+    .contact-row>p {
+        font-size: 13px;
+    }
+
+    .con-detail {
+        align-items: start;
+        justify-self: start;
+    }
+
+}
+
+@media screen and (max-width: 840px) {
+    .welcome-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 50px 200px;
+        gap: 15px;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .welcome-main > p{
+        margin-top: 30px;
+    }
+
+    .box-in > h4{ 
+        font-size: 18px;
+    }
+}
