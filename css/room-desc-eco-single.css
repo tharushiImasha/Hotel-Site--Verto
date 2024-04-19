@@ -1,0 +1,9 @@
+.rooms {
+    background-image: url(/assets/room-eco-single.jpg);
+    height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-weight: bold;
+}

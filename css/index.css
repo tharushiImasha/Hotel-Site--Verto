@@ -306,10 +306,6 @@ div.scroll-container img {
     margin-top: 30px;
 }
 
-
-
-
-
 .slideshow-container {
     position: relative;
     background: #f1f1f1f1;
@@ -506,6 +502,57 @@ footer>h4 {
 }
 
 
+/* .booking{
+    transform: translateX(-50%);
+    width: calc(100% - 60rem);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem 2rem;
+    background-color: rgba(255, 255, 255, 0.692);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.11);
+    border-radius: 2rem;
+}
+
+.booking form{
+    width: 100%;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.input_group{
+    width: 100%;
+    position: relative;
+}
+
+.booking > label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%);
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.booking > input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid var(--primary-color);
+    color: var(--text-dark);
+
+} */
+
+
 
 /* Responsive */
 
@@ -566,6 +613,11 @@ footer>h4 {
     
     .head {
         display: none;
+    }
+
+    header > div >img {
+        margin: 10px 0px 10px 5r0px;
+        width: 50px;
     }
 }
 

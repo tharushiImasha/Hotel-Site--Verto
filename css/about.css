@@ -1,0 +1,149 @@
+.rooms {
+    background-image: url(/assets/about-pic.jpg);
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-weight: bold;
+}
+
+.rooms>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.418);
+    height: 450px;
+}
+
+.rooms>div>h2 {
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    /* margin-top: 100px; */
+}
+
+.rooms>div>h5 {
+    font-size: 25px;
+    color: goldenrod;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.788);
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: normal;
+}
+
+.detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    width: 1000px;
+    gap: 90px;
+}
+
+.detail > h4{
+    font-size: 25px;
+}
+
+.detail >p{
+    margin-bottom: 0px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.images{
+    display: flex;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.images > img{
+    width: 400px;
+
+}
+
+.about-desc {
+    background-image: url(/assets/room-dark1.jpg);
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.about-desc>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.418);
+    height: 450px;
+}
+
+.about-desc>div>h2 {
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+}
+
+.about-desc > div > p{
+    color: white;
+}
+
+.about-desc>div>h5 {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    background-color: rgba(218, 165, 32, 0.795);
+    width: 300px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: normal;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 1288px) {
+    .images{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .detail {
+        margin-top: 100px;
+        width: 500px;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .detail {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        width: 200px;
+        gap: 30px;
+    }
+}

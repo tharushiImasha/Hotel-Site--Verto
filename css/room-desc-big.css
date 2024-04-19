@@ -1,0 +1,281 @@
+.rooms {
+    background-image: url(/assets/room-desc.jpg);
+    height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-weight: bold;
+}
+
+.rooms>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: rgba(0, 0, 0, 0.575);
+    height: 550px;
+}
+
+.rooms>div>h2 {
+    font-size: 50px;
+    margin-left: 200px;
+    color: white;
+    text-align: center;
+    /* margin-top: 100px; */
+}
+
+.rooms>div>h5 {
+    font-size: 25px;
+    color: goldenrod;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.788);
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: normal;
+}
+
+#carouselExampleFade{
+    width: 700px;
+    height: 500px;
+}
+
+.d-block{
+    width: 700px;
+    height: 500px !important;
+}
+
+.room-img{
+    margin: 100px 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 50px;
+}
+
+.room-det{
+    background-color: #3a3138;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.date{
+    background-color: white;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.date > p{
+    margin-bottom: 0px;
+    color: gray;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border: 1px solid white;
+    height: 80px;
+    width: 250px;
+    margin-top: 40px;
+}
+
+.price > p{
+    font-size: 15px;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.price > h5{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.availability{
+    background-color: rgba(218, 165, 32, 0.87);
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.icon-grid{
+    background-color: rgba(128, 128, 128, 0.171);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    width: 700px;
+    height: 245px;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+.icon{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon > img{
+    width: 35px;
+}
+
+.icon > p{
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+
+.caro-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.para{
+    width: 700px;
+    margin-top: 50px;
+    color: gray;
+}
+
+.details{
+    margin-top: 40px;
+    color: gray;
+    width: 700px;
+}
+
+.details > h4{
+    margin-bottom: 30px;
+}
+
+.det-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.det-line{
+    width: 700px;
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.452);
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1060px){
+    .room-img {
+        margin: 100px 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 740px){
+    .para{
+        width: 400px;
+        margin-top: 50px;
+        color: gray;
+    }
+
+    .details{
+        margin-top: 40px;
+        color: gray;
+        width: 400px;
+    }
+
+    .details > h4{
+        margin-bottom: 30px;
+    }
+
+    .det-flex{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .det-line{
+        width: 400px;
+        height: 1px;
+        background-color: rgba(128, 128, 128, 0.452);
+        margin-bottom: 15px;
+    }
+    #carouselExampleFade{
+        width: 400px;
+        height: 500px;
+    }
+
+    .icon-grid {
+        background-color: rgba(128, 128, 128, 0.171);
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px;
+        width: 400px;
+        height: 150px;
+        padding: 10px;
+        margin-top: 50px;
+    }
+
+    .icon {
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .icon > img{
+        width: 25px;
+    }
+
+    .icon > p{
+        font-size: 7px;
+        margin-bottom: 0px;
+    }
+
+    .room-img {
+        margin: 100px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .room-det{
+        background-color: #3a3138;
+        width: 300px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+}

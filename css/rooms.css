@@ -1,0 +1,154 @@
+body{
+    background-color: rgb(240, 240, 240) !important;
+}
+
+.rooms {
+    background-image: url(/assets/rooms-head.jpg);
+    height: 650px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-weight: bold;
+}
+
+.rooms>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.418);
+    height: 650px;
+}
+
+.rooms>div>h2 {
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    /* margin-top: 100px; */
+}
+
+.rooms>div>h5 {
+    font-size: 25px;
+    color: goldenrod;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.788);
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: normal;
+}
+
+.room-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 100px 30px 100px;
+}
+
+.room-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.room-box{
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 30px 50px rgba(128, 128, 128, 0.274);
+}
+
+.room-box > a{
+    width: 100%;
+}
+
+.room-box > a > img{
+    width: 100%;
+    height: 250px;
+}
+
+.room-content{
+    padding: 5px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.room-content > p{
+    background-color: #daa520b4;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.room-content>h2{
+    font-size: 30px;
+}
+
+.room-content>h6{
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+.line{
+    width: 350px;
+    height: 2px;
+    background-color: rgba(128, 128, 128, 0.404);
+}
+
+.room-things{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.count> img{
+    width: 25px;
+}
+
+.count{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.count>p{
+    font-size: 13px;
+    font-weight: lighter;
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 1340px){
+    .room-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .room-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+}

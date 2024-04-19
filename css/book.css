@@ -1,0 +1,111 @@
+body{
+    background-color: #e0eeff !important;
+}
+
+.main{
+    background-color: #001630;
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+
+.detail > h2{
+    font-family: "Herr Von Muellerhoff", cursive;
+    font-size: 75px;
+    color: goldenrod;
+}
+
+.detail > h4{
+    color: white;
+    font-size: 30px;
+}
+
+.detail>p {
+    color: white;
+    font-size: 13px;
+    margin-bottom: 0px;
+}
+
+.form-room{
+    margin-left: 50px;
+}
+
+.form-room > p{
+    color: white;
+    margin-bottom: 30px;
+}
+
+.line{
+    width: 550px;
+    height: 1px;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.form-room > input{
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1020px){
+    .main {
+        background-color: #001630;
+        width: 800px;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .main {
+        background-color: #001630;
+        width: 500px;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .line {
+            width: 400px;
+            height: 1px;
+            background-color: white;
+            margin-bottom: 30px;
+        }
+}
+
+@media screen and (max-width: 500px) {
+    .main {
+        background-color: #001630;
+        width: 300px;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .line {
+        width: 200px;
+        height: 1px;
+        background-color: white;
+        margin-bottom: 30px;
+    }
+}
