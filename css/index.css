@@ -393,112 +393,84 @@ q {
 }
 
 
-
-
-footer {
-    margin-top: 100px;
-    height: 600px;
-    background-image: url(/assets/contact.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-footer>h1 {
-    font-size: 35px;
-    color: white;
-    text-align: center;
-    margin-top: 45px;
-    margin-bottom: 15px;
-}
-
-footer>h3 {
-    font-size: 18px;
-    color: white;
-    font-weight: normal;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-footer>h4 {
-    font-size: 18px;
-    color: white;
-    text-align: center;
-    margin-top: 0px;
-}
-
-.contact {
-    display: flex;
-    justify-content: space-between;
-    margin: 30px 150px;
-}
-
-.con-detail {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
-.one-detail {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-.one-detail>img {
-    width: 70px;
-    height: 70px;
-}
-
-.contact-row {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.contact-row>h6 {
-    color: rgb(255, 183, 0);
-    font-size: 20px;
-    margin: 0px;
-    margin-top: 5px;
-}
-
-.contact-row>p {
-    color: white;
-    font-size: 18px;
-    margin: 5px;
-    margin-left: 0px;
-}
-
-.form {
-    background-color: white;
-    width: 550px;
-    height: 350px;
-}
-
-.message {
-    display: flex;
-    flex-direction: column;
-    margin: 30px 50px;
-    gap: 20px
-}
-
-.message>h3 {
-    font-size: 25px;
-    margin: 0px;
-}
-
-.text {
-    width: 430px;
-    height: 35px;
-}
-
-.btn {
-    width: 130px;
-    height: 40px;
+footer{
     background-color: #001630;
+    height: 450px;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 100px;
     color: white;
-    font-size: 20px;
+}
+
+.f-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.f-desc>h2{
+    font-size: 45px;
+}
+
+.f-desc>p{
+    width: 400px;
+    color: rgba(255, 255, 255, 0.664);
+}
+
+.f-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.f-contact > p{
+    color: rgba(255, 255, 255, 0.664);
+}
+
+.f-emil{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.f-emil > p{
+    color: rgba(255, 255, 255, 0.664);
+}
+
+.email-btn{
+    display: flex;
+    flex-direction: row;
+}
+
+.email-btn > input{
+    width: 300px;
+    height: 45px;
+    border: none;
+    padding: 10px;
+}
+
+.email-btn > button{
+    height: 45px;
+    border: none;
+    width: 50px;
+}
+
+.f-line{
+    width: 1200px;
+    height: 1px;
+    background-color: #717171;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
 }
 
 
@@ -664,6 +636,26 @@ footer>h4 {
     .container>ul>li {
         font-size: 10px;
     }
+
+    footer{
+        background-color: #001630;
+        height: 800px;
+        padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        gap: 30px;
+        color: white;
+    }
+
 }
 
 @media screen and (max-width: 725px) {
