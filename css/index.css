@@ -11,7 +11,7 @@ header {
     align-items: center;
     position: sticky;
     top: 0px;
-    width: 100vw;
+    /* width: 100vw; */
     background-color: #001630;
     gap: 20px;
     height: 100px;
@@ -30,6 +30,14 @@ header > div >img {
     width: 50px;
 }
 
+.logo{
+    width: 45px;
+}
+
+.navbar{
+    background-color: #001630 !important;
+}
+
 header>div>h1{
     color: white;
 }
@@ -41,6 +49,8 @@ header>div>h1{
 
 .head > ul{
     margin-bottom: 0px;
+    display: flex;
+    align-items: center;
 }
 
 .head > ul > li > a{
@@ -52,7 +62,7 @@ header>div>h1{
 
 .head ul li {
     display: inline;
-    padding: 30px;
+    padding: 0px 30px;
 }
 
 ul {
@@ -473,6 +483,31 @@ footer{
     
 }
 
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 200px;
+}
+
+.dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.menu:hover .dropdown,
+.menu.show .dropdown {
+    display: block;
+}
+
 
 /* .booking{
     transform: translateX(-50%);
@@ -533,6 +568,10 @@ footer{
     .navB{
         visibility: hidden;
     }
+
+    .welcome-main{
+        margin: 50px 200px;
+    }
 }
 
 @media screen and (max-width: 1500px) {
@@ -579,6 +618,21 @@ footer{
 }
 
 @media screen and (max-width: 1275px) {
+    /* .head .menu {
+        display: block;
+    }
+    
+    .head {
+        display: none;
+    } */
+
+    header > div >img {
+        margin: 10px 0px 10px 5r0px;
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 1160px) {
     .head .menu {
         display: block;
     }
@@ -587,10 +641,6 @@ footer{
         display: none;
     }
 
-    header > div >img {
-        margin: 10px 0px 10px 5r0px;
-        width: 50px;
-    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -772,4 +822,21 @@ footer{
     .box-in > h4{ 
         font-size: 18px;
     }
+}
+
+
+
+.nav-bar::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: -.5rem;
+    transition: width .3s;
+}
+
+.active-link::after {
+    width: 70%;
 }
